@@ -1,13 +1,13 @@
-import React, { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from "react";
+import "./style.css";
+import Navbar_test from "./Components/Navbar/Navbar.jsx";
 
-import App from './App';
-
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+export default function App() {
+  return (
+    <div>
+      <h1>Hello StackBlitz!</h1>
+      <p>Start editing to see some magic happen :)</p>
+      <Navbar_test />
+    </div>
+  );
+}
